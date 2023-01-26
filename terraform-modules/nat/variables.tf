@@ -1,0 +1,11 @@
+
+#variable for nat gateway name
+variable "natgw_name" {  
+  description = "Name of NAT gateway"
+  default = "msf_nat_gw"
+}
+
+variable "natgw_subnetids" {
+  description = "List of subnet ids to apply to NAT gateway"  
+  type = list
+}
